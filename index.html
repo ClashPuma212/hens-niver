@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="chiikake.png" type="image/x-icon">
+    <title>🎁HENS¹⁸Gift🎈</title>
+</head>
+<body>
+  <audio controls id="audio1">
+    <source src="Treehouse.mp3" type="audio/mpeg">
+    <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="Turnaround-Reprise">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+  <audio controls id="audio2" style="display: none;">
+    <source src="Flowed.mp3" type="audio/mpeg">
+    <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="C418 - Sweden (Cover)">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+  <script>
+    var audio1 = document.getElementById("audio1");
+    var audio2 = document.getElementById("audio2");
+  
+    audio1.addEventListener("ended", function() {
+      audio2.loop = true; // Define o segundo áudio para loop
+      audio2.play(); // Inicia a reprodução do segundo áudio em loop
+      audio1.style.display = "none"; // Esconde o primeiro áudio
+      audio2.style.display = "block"; // Exibe o segundo áudio
+    });
+  </script>  
+  <div class="confetes">
+    <img src="confetes.gif" alt="Confetes">
+</div>
+  <script src="main.js"></script>
+  <div class="night"></div>
+    <div class="birthdayCard">
+        <div class="cardFront">
+            <div class="front-text">
+            <h3 class="happy">✨FELIZ✨</h3>
+            <h2 class="bday">ANIVERSÁRIO</h2> 
+            <h3 class="toyou">😚!HEN!🤗</h3>  
+        </div>
+        <div class="wrap-deco">
+            <div class="decorations"></div>
+            <div class="decorationsTwo"></div>
+        </div> 
+        <div class="wrap-decoTwo">
+            <div class="decorations"></div>
+            <div class="decorationsThree"></div>
+          </div>
+          <div class="cake-background">
+            <img src="sukllgirl.jpg" alt="Background Image">
+          </div>
+          <div class="plate">
+            <div class="cake"></div>
+            <div class="flame"></div>
+          </div>
+        </div>  
+          <div class="cardInside">
+             <div class="inside-text">
+          <h3 class="happy">🎉FELIZ🥳</h3>
+          <h2 class="bday">!🍰BOLODAY🎂!</h2> 
+          <h3 class="toyou">🎈PAMELA💛</h3>  
+          </div>
+            <div class="wishes">
+            <p>Querida amiga!<p>
+              
+              Feliz Aniversário, gata!!! Desejo as melhores coisas do universo pra sua vida e q tenha um ótimo dia, pq é uma pessoa super legal e agradeço muito pela sua amizade :D Ter 18 pode assustar, mas estou aqui se precisar💛</p>
+            <p class="name">-Tim amo *mwah</p>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
